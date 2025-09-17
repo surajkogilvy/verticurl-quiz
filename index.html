@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verticurl Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="quiz-header">
+      <img src="verticurl-logo.png" alt="Verticurl Logo" class="logo">
+      <h1>Quarterly Billable Utilization Assessment</h1>
+      <div class="scoreboard">
+        <span id="q-num">Q1/10</span>
+        <span id="score">0 pts</span>
+      </div>
+    </div>
+    <div class="progress-bar"><div id="progress-fill"></div></div>
+    <div id="question-area"></div>
+    <button id="next-btn" class="verticurl-btn">Submit</button>
+    <div id="result-area" class="result hidden"></div>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <audio id="sound-correct" src="correct.mp3"></audio>
+  <audio id="sound-wrong" src="wrong.mp3"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
