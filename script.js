@@ -6,9 +6,9 @@ const quizData = [
   { q: "What is the best way to plan non-billable time during a low-utilization period?", type: "multi", options: ["Wait for work to come","Proactively seek shadowing opportunities / ask for activity","Take unplanned leave","Avoid communication"], answer: [1] },
   { q: "What is the primary benefit of planning enablement activities during non-billable time?", type: "single", options: ["It fills time","It helps improve future billability","It reduces workload","It avoids meetings"], answer: 1 },
   { q: "Which of the following is a good example of enablement?", type: "single", options: ["Learning a new tool or platform","Watching random YouTube videos","Taking a long lunch","Ignoring skill gaps"], answer: 0 },
-  { q: "You have 10 hours of non-billable time this week. What’s the best way to use it?", type: "single", options: ["Schedule learning sessions","Do nothing","Take leave","Delay timesheet entry"], answer: 0 },
+  { q: "You have 10 hours of non-billable time this week. What's the best way to use it?", type: "single", options: ["Schedule learning sessions","Do nothing","Take leave","Delay timesheet entry"], answer: 0 },
   { q: "Your utilization is low this month. What should you do?", type: "single", options: ["Escalate to your manager","Wait for allocation","Volunteer for internal initiatives","Both a and c"], answer: 3 },
-  { q: "In your opinion, what’s one thing we can do better as a team to improve utilization?", type: "text", answer: null }
+  { q: "In your opinion, what's one thing we can do better as a team to improve utilization?", type: "text", answer: null }
 ];
 
 let current = 0, score = 0, awaitingFeedback = false;
@@ -135,5 +135,5 @@ nextBtn.addEventListener('click', () => {
   nextBtn.textContent = 'Next';
 });
 
-// Initialize
+// Initialize the quiz - THIS LINE WAS MISSING!
 loadQuestion();
